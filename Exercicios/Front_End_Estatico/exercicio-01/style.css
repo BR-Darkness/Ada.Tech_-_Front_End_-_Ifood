@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    list-style: none;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+html
+{
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Lato', sans-serif;
+    background-color: #0f1216;
+    line-height: 1.5;
+
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+}
+
+/* ----- Base ----- */
+
+h1
+{
+    font-family: 'Fira Code', monospace;
+}
+
+#Menu, h2
+{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a
+{
+    color: #7ebb3d;
+}
+
+a:hover
+{
+    color: #a6f750;
+}
+
+/* ----- Menu ----- */
+
+#Logo
+{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #f1f1f1;
+}
+
+#Logo:hover
+{
+    color: #a6f750;
+}
+
+#Menu
+{
+    filter: drop-shadow(rgba(0, 0, 0, 0.25) 5px 20px 25px);
+    border-bottom: 4px solid #7ebb3d;
+    justify-content: space-around;
+    background-color: #181c23;
+    align-items: center;
+    margin-bottom: 2em;
+    padding: 2em;
+
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    gap: 1em;
+}
+
+#Menu-Button
+{
+    border-bottom: 2px solid #7ebb3d;
+    background-color: #a6f750;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: #0f1216;
+}
+
+#Menu-Button:hover
+{
+    background-color: #7ebb3d;
+}
+
+/* ----- Main ----- */
+
+main
+{
+    max-width: 900px;
+    color: #f1f1f1;
+    margin: auto;
+    padding: 1em;
+}
+
+main h1
+{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* ----- Card ----- */
+
+#Card-List
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.card
+{    
+    background-color: #181c23;
+    width: min(600px, 100%);
+    word-wrap: break-word;
+    border-radius: 8px;
+    padding: 2em;
+}
+
+.card-avatar
+{
+    box-shadow: 0 0 0 2px #7ebb3d;
+    border-radius: 50%;
+    margin: 2em auto;
+    display: block;
+}
+
+.card p
+{
+    text-align: justify;
+    margin: 1em 0;
+}
+
+.card h2, h3
+{
+    color: #a6f750;
+}
+
+.card h3
+{
+    margin-top: 2em;
+}
+
+.card ul
+{
+    flex-direction: column;
+    display: flex;
+    padding: 1em;
+    gap: 1em;
+}
+
+.card li
+{
+    list-style: circle;
+}
+
+.card-footer
+{
+    background-color: #f0fff0a0;
+    justify-content: center;
+    border-radius: 16px;
+    margin-top: 2em;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 1em;
+    gap: 48px;
+}
+
+/* ----- Footer ----- */
+
+footer
+{
+    border-top: 4px solid #7ebb3d;
+    background-color: #181c23;
+    text-align: center;
+    color: #f1f1f1;
+    margin-top: 2em;
+    padding: 2em;
+    width: 100%;
+
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    gap: 1em;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: #7ebb3d;
+}
+
+footer a:hover
+{
+    color: #a6f750;
+}
+
+/* ----- ScrollBar ----- */
+
+::-webkit-scrollbar 
+{
+    height: 0.75em;
+    width: .75em;
+}
+
+::-webkit-scrollbar-track 
+{
+    background: #181c23;
+}
+   
+::-webkit-scrollbar-thumb 
+{
+    box-sizing: border-box;
+    background: #383c44; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+    background: #7ebb3d; 
+}
