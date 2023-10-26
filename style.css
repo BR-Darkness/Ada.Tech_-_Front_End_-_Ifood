@@ -149,8 +149,9 @@ main h1
 .card ul
 {
     flex-direction: column;
-    display: flex;
+    margin-bottom: 1em;
     padding: 0 1em;
+    display: flex;
     gap: 1em;
 }
 
