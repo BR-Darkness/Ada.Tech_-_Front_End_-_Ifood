@@ -1,0 +1,451 @@
+*
+{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+html
+{
+    scroll-padding-top: 120px;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: "Exo 2", sans-serif;
+    line-height: 1.75;
+
+    background: linear-gradient(to right,#EC9F0520 0%, #FF4E0020 100%);
+}
+
+/* ----- Menu ----- */
+
+#Menu
+{
+    background-color: #e0342e;
+    position: sticky;
+    color: #fff;
+    top: 0;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    gap: 2em;
+}
+
+#Menu-Itens ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#Menu-Itens a
+{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: .5em;
+    color: #fff;
+}
+
+#Menu-Itens a:hover
+{
+    color: #febe01;
+}
+
+/* ----- Base ----- */
+
+#Hero-Section, #About-Section, #Table-Section
+{
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 2em auto;
+    display: flex;
+    width: 100%;
+    gap: 1em;
+}
+
+figcaption
+{
+    font-style: italic;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ----- Hero Section ----- */
+
+#Hero-Section
+{
+    border-radius: 8px;
+    background: linear-gradient(to right,#EC9F0540 0%, #FF4E0040 100%), url("img/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+
+#Hero-Section div
+{
+    text-shadow: 2px 2px #242424;
+    text-align: center;
+    color: #fff;
+}
+
+#Hero-Section h1
+{    
+    letter-spacing: 2px;
+    font-size: 48px;
+}
+
+#Hero-Section p
+{
+    font-size: 18px;
+}
+
+/* ----- About Section ----- */
+
+#About-Section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.card
+{
+    border-bottom: 8px solid #febe01;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 900px;
+    padding: 2em;
+    margin: 1em;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em 4em;
+}
+
+.card figure
+{
+    display: block;
+    margin: auto;
+}
+
+.card img
+{
+    border-radius: 8px;
+}
+
+.card h2
+{
+    text-align: left;
+    font-size: 32px;
+}
+
+.card-text
+{
+    flex-direction: column;
+    text-align: justify;
+    min-width: 350px;
+    font-size: 17px;
+    display: flex;
+    gap: 1em;
+    flex: 1;
+}
+
+/* ----- Gallery Section ----- */
+
+#Gallery-Section
+{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    gap: 2em;
+}
+
+#Gallery-Section h2
+{
+    font-size: 32px;
+}
+
+#Gallery-Section figure
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+#Gallery-Section img
+{
+    border-radius: 8px;
+}
+
+/* ----- Table Section ----- */
+
+#Table-Section
+{
+    overflow: auto;
+}
+
+#Table-Section table
+{
+    border-collapse: collapse;
+    margin: 1em;
+}
+
+#Table-Section table caption
+{
+    background-color: seagreen;
+    border-radius: 8px 8px 0 0;
+    font-size: 24px;
+    color: #fff;
+    padding: 1em;
+}
+
+#Table-Section thead th
+{
+    background-color: #fff;
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 16px;
+    padding: 1em;
+}
+
+#Table-Section tbody tr:nth-child(even) 
+{
+    background-color: #ffffff;
+}
+
+#Table-Section tbody tr:nth-child(odd) 
+{
+    background-color: #cacaca;
+}
+
+#Table-Section tbody td
+{
+    padding: .5em;
+}
+
+#Table-Section tbody td:nth-child(1) img
+{
+    border-radius: 8px;
+}
+
+#Table-Section tbody td:nth-child(3)
+{
+    min-width: 250px;
+}
+
+#Table-Section tbody td:nth-child(4)
+{
+    font-style: italic;
+    font-weight: bold;
+    min-width: 125px;
+}
+
+#Table-Section tfoot td
+{
+    background-color: #e0342e;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+    color: #fff;
+    padding: 1em;
+}
+
+/* ----- Form Container ----- */
+
+#Form-Container
+{
+    border-top: 8px solid #e0342e;
+    border-radius: 8px 8px 0 0;
+
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 1em;
+    gap: 1em;
+}
+
+#Form-Container h3
+{
+    letter-spacing: 2px;
+    font-size: 32px;
+}
+
+#Form-Container form
+{
+    display: grid;
+    width: min(400px, 100%);
+    gap: .5em;
+}
+
+#Form-Container label
+{
+    font-weight: bold;
+}
+
+#Form-Container input
+{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    padding: .5em;
+}
+
+#Form-Container form button[type="submit"]
+{
+    margin-top: 1em;
+    border-radius: 4px;
+    background-color: seagreen;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    padding: 1em;
+}
+
+/* ----- Footer ----- */
+
+#Footer-Logo img
+{
+    display: block;
+    margin: auto;
+}
+
+#Footer-Logo
+{
+    border: 8px solid #e0342e;
+    border-radius: 50% 50% 0 0;
+    background-color: #fff;
+    width: fit-content;
+    border-bottom: 0;
+    padding: 1em 2em;
+    margin: auto;
+}
+
+footer
+{
+    border-top: 8px solid seagreen;
+    background-color: #242424;
+    color: #f1f1f1;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+footer a
+{
+    padding: 12px;
+}
+
+.top-button img
+{
+    display: block;
+    height: 24px;
+    width: 24px;
+}
+
+.top-button
+{
+    z-index: 2;
+    box-shadow: 0px 0px 4px 0px #242424;
+    background-color: #fff;
+    border-radius: 48px;
+    
+    position: fixed;
+    margin: 1em;
+    bottom: 0;
+    right: 0;
+}
+
+/* -----  ----- ScrollBar -----  ----- */
+
+::-webkit-scrollbar 
+{
+    height: .75em;
+    width: 1em;
+}
+
+::-webkit-scrollbar-track 
+{
+    background: #242424;
+}
+   
+::-webkit-scrollbar-thumb 
+{
+    border: 2px solid #242424;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: #555; 
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+    background: #777; 
+}
+
+/* ----- Mobile ----- */
+
+@media screen and (max-width: 600px)
+{
+    #Logo
+    {
+        display: none;
+    }
+
+    #Menu-Itens a
+    {
+        font-size: 14px;
+    }
+
+    #Hero-Section h1
+    {
+        font-size: 32px;
+    }
+
+    #Hero-Section p
+    {
+        font-size: 16px;
+    }
+
+    .card img
+    {
+        height: auto;
+        width: 100%;
+    }
+
+    .card-text
+    {
+        min-width: auto;
+        font-size: 16px;
+    }
+
+    .card-text h2
+    {
+        font-size: 22px;
+    }
+}

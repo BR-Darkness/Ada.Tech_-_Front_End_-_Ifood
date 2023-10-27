@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurante Ada's Delícias - Descubra uma jornada de sabor única em nosso restaurante.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizzaria Ada's Delícias - Promoção Clone de Pizza por apenas R$59,90</title>
+</head>
+<body>
+    <header id="Menu">
+        <a id="Logo" href="#"><img src="img/Logo/Logo_White.svg" alt="Logo da Pizzaria Ada's Delícias" height="80px"></a>
+        <nav id="Menu-Itens" role="navigation" aria-label="Navegação principal">
+            <ul>
+                <li><a href="#About-Section" aria-label="Sobre a Pizzaria">Sobre</a></li>
+                <li><a href="#Table-Section" aria-label="Cardápio da Pizzaria">Cardápio</a></li>
+                <li><a href="#Form-Container" aria-label="Cadastro de Clientes">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Hero-Section">
+        <div>
+            <h1>Pizzaria Ada's Delícias</h1>
+            <p>Cada mordida um momento de felicidade</p>
+        </div>
+    </section>
+
+    <main>
+        <section id="About-Section">
+            <div class="card">
+                <figure>
+                    <img src="img/massa.jpg" alt="Imagem de massa de pizza" width="250px" height="250px">
+                    <figcaption>A melhor massa da região.</figcaption>
+                </figure>
+                <div class="card-text">
+                        <h2>Sobre a Ada's Delícias:</h2>
+                        <p>Em nossa pizzaria, cada pizza é uma experiência única e deliciosa. Com ingredientes frescos, massa artesanal e molhos exclusivos, transformamos cada mordida em um momento de felicidade.</p>
+
+                        <p>De clássicas a ousadas, nossa paixão pela pizza é evidente em cada sabor. Ada's Delícias é onde a alegria encontra o paladar.</p>
+                </div>                
+            </div>
+        </section>
+
+        <section id="Gallery-Section">
+            <h2>Galeria:</h2>
+            <figure>
+                <img src="img/Margherita.jpg" alt="imagem de uma pizza de marguerita" title="Esta é uma imagem de pizza de marguerita" width="200px" height="150px">
+                <img src="img/Pepperoni.jpg" alt="imagem de uma pizza de pepperoni" title="Esta é uma imagem de pizza de pepperoni" width="200px" height="150px">
+                <img src="img/Vegetariana.jpg" alt="imagem de uma pizza vegetariana" title="Esta é uma imagem de pizza de vegetariana" width="200px" height="150px">
+                <img src="img/Frango_com_Catupiry.jpg" alt="imagem de uma pizza de frango com catupiry" title="Esta é uma imagem de pizza de frango com catupiry" width="200px" height="150px">
+            </figure>
+        </section>
+
+        <section id="Table-Section">
+            <table cellpadding="5">
+                <caption>
+                    <strong>Cardápio.</strong>
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Pizza</th>
+                        <th scope="col">Sabor</th>
+                        <th scope="col">Descrição</th>
+                        <th scope="col">Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="img/Margherita.jpg" alt="imagem de uma pizza de marguerita" title="Esta é uma imagem de pizza de marguerita" width="150px" height="100px"></td>
+                        <td><strong>Margherita</strong></td>
+                        <td>Molho de tomate, muçarela, manjericão fresco.</td>
+                        <td>R$ 29,00</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/Pepperoni.jpg" alt="imagem de uma pizza de pepperoni" title="Esta é uma imagem de pizza de pepperoni" width="150px" height="100px"></td>
+                        <td><strong>Pepperoni</strong></td>
+                        <td>Molho de tomate, muçarela, pepperoni picante.</td>
+                        <td>R$ 25,00</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/Vegetariana.jpg" alt="imagem de uma pizza vegetariana" title="Esta é uma imagem de pizza de vegetariana" width="150px" height="100px"></td>
+                        <td><strong>Vegetariana</strong></td>
+                        <td>Molho de tomate, muçarela, pimentão, cebola, cogumelos.</td>
+                        <td>R$ 27,00</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/Frango_com_Catupiry.jpg" alt="imagem de uma pizza de frango com catupiry" title="Esta é uma imagem de pizza de frango com catupiry" width="150px" height="100px"></td>
+                        <td><strong>Frango com Catupiry</strong></td>
+                        <td>Molho de tomate, muçarela, provolone, gorgonzola, parmesão.</td>
+                        <td>R$ 30,00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"><strong>Descubra o sabor na Pizzaria Ada's Delícias, onde cada pizza é uma experiência única.</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <div id="Footer-Logo">
+        <img src="img/Logo/Logo_Black.svg" alt="Logo da Pizzaria Ada's Delícias" width="150px">
+    </div>
+
+    <div id="Form-Container">
+        <h3>Cadastre-se</h3>
+        <form>
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" placeholder="Insira o seu nome" required />
+        
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="Insira o seu endereço de E-mail" required/>
+        
+            <label for="senha">Senha: </label>
+            <input type="password" id="senha" placeholder="Insira sua senha" required/>
+
+            <button type="submit" title="Clique para enviar o formulário">Cadastrar</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Ada's Delícias - Todos os direitos reservados.</p>
+        <a href="#" class="top-button" aria-label="Navegação Principal"><img src="Img/arrow_upward.svg" alt="Início"></a>
+    </footer>
+</body>
+</html>
