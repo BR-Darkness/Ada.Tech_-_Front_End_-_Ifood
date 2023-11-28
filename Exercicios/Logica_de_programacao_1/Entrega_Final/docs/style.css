@@ -1,0 +1,146 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+}
+
+::selection
+{
+    background-color: #CCC;
+}
+
+body
+{
+    font-family: "Crimson Pro";
+    line-height: 1.5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer
+{
+    text-wrap: balance;
+    text-align: center;
+}
+
+h1
+{
+    text-align: center;
+}
+
+#List
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    list-style: none;
+    margin: 1em;
+    gap: .25em;
+}
+
+/* ----- ----- Card ----- ----- */
+.card
+{
+    display: flex;
+    border: 1px solid #bbb;
+    width: min(450px, 100%);
+    word-break: break-all;
+    word-wrap: break-word;
+    text-wrap: balance;
+    border-radius: 8px;
+    margin: 1em;
+    gap: 1em;
+}
+
+.card-text
+{
+    flex-direction: column;
+    display: flex;
+    margin: 1em;
+    width: 100%;
+}
+
+.atv-resp
+{
+    font-size: 14px;
+    text-align: right;
+}
+
+.card-actions :nth-child(2):hover
+{
+    transition: .25s;
+    border: 1px solid orange;
+}
+
+.card-actions :nth-child(3):hover
+{
+    transition: .25s;
+    border: 1px solid crimson;
+}
+
+.card-actions
+{
+    border-right: 1px solid #bbb;
+    background-color: #eee;
+    align-items: center;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+}
+
+/* ----- ----- Buttons ----- ----- */
+button
+{
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: .25em;
+    display: flex;
+}
+
+/* ----- ----- Actions Menu: ----- ----- */
+.actions-menu nav
+{
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    gap: 2em;
+}
+
+.actions-menu
+{
+    background-color: #CCC8;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    position: sticky;
+    padding: .5em;
+    margin: 1em;
+    bottom: 0;
+}
+
+.actions-menu button:nth-child(1):hover
+{
+    transition: .25s;
+    border: 1px solid seagreen;
+}
+
+.actions-menu button:nth-child(2):hover
+{
+    transition: .25s;
+    border: 1px solid blue;
+}
+
+.actions-menu button:nth-child(3):hover
+{
+    transition: .25s;
+    border: 1px solid crimson;
+}

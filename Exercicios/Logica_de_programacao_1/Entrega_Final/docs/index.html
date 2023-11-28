@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>To-Do List</title>
+</head>
+<body>
+    <header>
+        <p id="Logo">To-Do List</p>
+    </header>
+
+    <main>
+        <section>
+            <h1><i>Lista de Tarefas</i></h1>
+            <nav>
+                <ul id="List">
+                    <!-- Lista de Tarefas -->
+                    <li class="card">  
+                        <div class="card-actions">
+                            <p class="atv-id">#001</p>
+                            <button class="btn-editar" onclick="editarDescricaoAtividade()"><img src="img/edit.svg" alt="Editar Tarefa" width="20px" height="20px"></button>
+                            <button class="btn-remover" onclick="removerAtividade()"><img src="img/delete.svg" alt="Deletar Tarefa" width="20px" height="20px"></button>
+                        </div>
+                        <div class="card-text">
+                            <h3 class="atv-nome">${atv.nome}</h3>
+                            <p class="atv-desc">${atv.descricao}${atv.descricao}${atv.descricao}${atv.descricao}${atv.descricao}${atv.descricao}${atv.descricao}${atv.descricao}${atv.descricao}${atv.descricao}${atv.descricao}${atv.descricao}${atv.descricao}</p>
+                            <p class="atv-resp"><b>${atv.responsavel}</b></p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="actions-menu">
+            <nav>
+                <button onclick="adicionarAtividade()"><img src="img/add.svg" alt="Adicionar Atividade"></button>
+                <button onclick="buscarAtividadePorID()"><img src="img/search.svg" alt="Buscar Atividade"></button>
+                <button onclick="exibirLista()"><img src="img/list.svg" alt="Exibir Lista"></button>
+            </nav>
+        </section>
+    </main>
+
+    <footer>
+        <p>Atividade "To-Do List" do 2º Módulo do Bootcamp Ada Ifood.</p>
+        <p><b>GitHub: <a href="#">BR-Darkness</a></b></p>
+    </footer>
+</body>
+</html>
