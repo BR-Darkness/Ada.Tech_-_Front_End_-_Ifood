@@ -1,6 +1,16 @@
+//Lógica de autoincrementar o ID:
+incrementCounter = (function() {
+    let counter = 0;
+    return function() {
+        counter++;
+        return counter;
+    }
+})();
+
+//Construtor Atividade
 class Atividade {
-    constructor(id, nome, descricao, responsavel) {
-        this.id = id ? id : (listaDeAtividades.length);
+    constructor(nome, descricao, responsavel) {
+        this.id = incrementCounter();
         this.nome = nome ? nome : "Atividade sem Nome";
         this.descricao = descricao ? descricao : "Atividade sem Descrição";
         this.atividadeItem = [];
@@ -16,7 +26,7 @@ const exibirLista = () => { atualizarLista(listaDeAtividades); }
 
 const atualizarLista = (array) => {
     let data = '';
-//FILTER???????????????????????????????????????????????????????????????????????
+
     array.map( (atv, index) => {
         data += 
         `
@@ -50,10 +60,11 @@ const adicionarAtividade = () => {
 }
 
 //REMOVER UMA ATIVIDADE
-const removerAtividadePorID = (id) => {
+const removerAtividadePorID= (IDaSerRemovido) => {
     //logica de remover atividade
-    listaDeAtividades.splice(id, 1);
+    listaDeAtividades = listaDeAtividades.filter(item => item.id != IDaSerRemovido);
     exibirLista();
+    // atualizarLista(aa)
 }
 
 //PESQUISAR UMA ATIVIDADE
