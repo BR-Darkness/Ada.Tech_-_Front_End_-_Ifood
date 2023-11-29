@@ -13,7 +13,6 @@ class Atividade {
         this.id = incrementCounter();
         this.nome = nome ? nome : "Atividade sem Nome";
         this.descricao = descricao ? descricao : "Atividade sem Descrição";
-        this.atividadeItem = [];
         this.responsavel = responsavel ? responsavel : "Atividade sem Responsavel";
     }
 }
@@ -47,9 +46,8 @@ const atualizarLista = (array) => {
     document.getElementById('List').innerHTML = data;
 }
 
-//ADICIONAR UMA ATIVIDADE
+//Adicionar Atividade
 const adicionarAtividade = () => {
-    //logica de adicionar uma nova atividade
     let nome = prompt('Informe o nome:');
     let descricao = prompt('Informe a descricao:');
     let responsavel = prompt('Informe o responsavel:');
@@ -59,26 +57,47 @@ const adicionarAtividade = () => {
     exibirLista();
 }
 
-//REMOVER UMA ATIVIDADE
-const removerAtividadePorID= (IDaSerRemovido) => {
-    //logica de remover atividade
-    listaDeAtividades = listaDeAtividades.filter(item => item.id != IDaSerRemovido);
+//Remover Atividade
+const removerAtividadePorID= (id) => {
+    listaDeAtividades = listaDeAtividades.filter(item => item.id != id);
     exibirLista();
-    // atualizarLista(aa)
 }
 
-//PESQUISAR UMA ATIVIDADE
+//Pesquisar Atividade
 const buscarAtividadePorID = () => {
-    //logica de buscar atividade
     let termoBuscado = prompt("Informe a ID da atividade a ser buscada:")
     let resultadoBusca = listaDeAtividades.filter(item => item.id == termoBuscado);
     atualizarLista(resultadoBusca);
 }
 
-//EDITAR DESCRICAO DE UMA ATIVIDADE
-const editarDescricaoAtividade = (index) => {
-    //logica para editar descricao da atividade
-    let atv = listaDeAtividades.filter(item => item.id == termoBuscado).length;
-    atv.descricao = prompt('Informe a nova descricao:');
+//Editar Atividade
+const editarDescricaoAtividade = (id) => {
+
+    listaDeAtividades.forEach(element => {
+        if (element.id == id) {
+
+            let nome = prompt('Informe o novo nome:');
+            if(nome)
+            {
+                element.nome = nome;
+            }
+            element.nome = element.nome;
+
+            let descricao = prompt('Informe a nova descricao:');
+            if(descricao)
+            {
+                element.descricao = descricao;
+            }
+            element.descricao = element.descricao;
+
+            let responsavel = prompt('Informe o novo responsavel:');
+            if(nome)
+            {
+                element.responsavel = responsavel;
+            }
+            element.responsavel = element.responsavel;
+        }
+    });
+    
     exibirLista();
 }
