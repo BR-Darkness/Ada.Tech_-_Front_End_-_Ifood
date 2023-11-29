@@ -91,7 +91,7 @@ const editarDescricaoAtividade = (id) => {
             element.descricao = element.descricao;
 
             let responsavel = prompt('Informe o novo responsavel:');
-            if(nome)
+            if(responsavel)
             {
                 element.responsavel = responsavel;
             }
